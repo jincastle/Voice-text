@@ -20,9 +20,9 @@ class Settings(BaseSettings):
     JWT_ALGORITHM = "HS256"
     JWT_SECRET_KEY = os.getenv("JWT_SECRET", "imizi-secret")
     ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 1  # one day
-    api_key = "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"
-    client_id = "0dzn01lmc2"
-    client_secret = "bGQHw09ZRpzk40SV1GMh48J2JdCRvskekcM0CMll"
+    api_key = ""
+    client_id = ""
+    client_secret = ""
 # 3가지 셋팅
 class DevSettings(Settings):
     DB_URL = "mysql+pymysql://root:wlstjd@localhost:3306/sqlalchemy?charset=utf8mb4"
